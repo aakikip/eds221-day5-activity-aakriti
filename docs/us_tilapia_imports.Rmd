@@ -1,0 +1,41 @@
+---
+title: "us_tilapia_imports"
+output: html_document
+date: "2025-08-15"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+```{r}
+us_tilapia_imports <- read_csv(here::here("data", "us_tilapia_imports.csv"))
+```
+```{r}
+summary(us_tilapia_imports)
+```
+
+```{r}
+names(us_tilapia_imports)
+```
+```{r}
+dim(us_tilapia_imports)
+```
+
+```{r}
+library(skimr)
+```
+
+```{r}
+skim(us_tilapia_imports)
+```
+```{r}
+
+```
+
